@@ -14,6 +14,7 @@ body.contact {
 .firstLine:hover {
     color: white;
     text-shadow: 0 0 0.05em hsl(0, 0%, 100%), 0 0 0.5em black;
+    transition: text-shadow 1500ms linear;
 }
 
 .cantact-flex {
@@ -45,6 +46,8 @@ body.contact {
   border-radius: 0.9em;
   padding: 0.75rem;
   box-shadow: 0 0 2em 0.5em #233142;
+  transition: box-shadow 1000ms linear;
+
 }
 
 .email-flex {
@@ -61,7 +64,9 @@ body.contact {
   border: dotted;
   border-radius: 0.9em;
   padding: 0.75rem;
-  box-shadow: 0 0 2em 0.5em #e3e3e3;
+  box-shadow: 0 0 2em 0.5em #233142;
+  transition: box-shadow 1000ms linear;
+
 }
 
 .github-flex {
@@ -77,7 +82,8 @@ body.contact {
   color: #a5def1;
   border-radius: 0.9em;
   padding: 0.75rem;
-  box-shadow: 0 0 2em 0.5em #e3e3e3;
+  box-shadow: 0 0 2em 0.5em #233142;
+  transition: box-shadow 1000ms linear;
 }
 
 .contact-title {
