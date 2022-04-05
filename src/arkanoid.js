@@ -12,10 +12,6 @@ import {
 
 import "./arkanoid.css";
 
-const sizes = {
-  width: window.innerWidth,
-  height: window.innerHeight
-};
 
 function Ball({ args = [0.5, 32, 32] }) {
   const { viewport } = useThree();
