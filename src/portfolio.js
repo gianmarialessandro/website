@@ -12,12 +12,12 @@ import "./portfolio.css";
 
 const Portfolio = () => {
   useEffect(() => {
-    document.body.style.overflow = "none";
     clearPortfolioPage();
     clearContactPage();
     clearAboutPage();
     clearArkanoidPage();
     fixPortfolioPage();
+    document.body.style.overflow = "visible";
   }, []);
 
   return (
@@ -50,7 +50,7 @@ const Portfolio = () => {
       </nav>
 
       <div className="grid-container">
-        <article className="project city grid-col-span2">
+        <article className="project city grid-col-span4">
           <div className="flex">
             <div className="imgAndTitleDiv">
               <img
@@ -92,6 +92,43 @@ const Portfolio = () => {
             <div>
               <a href="https://www.versio.io/blog-cmdb-visualize-inventory-data-3d-city-map.html">
                 article about the project
+              </a>
+            </div>
+          </div>
+        </article>
+        <article className="project arkanoid grid-col-span2">
+          <div className="flex">
+            <div className="imgAndTitleDiv">
+              <img
+                src="./img/images/arkanoid.png"
+                alt="city-map"
+                width="100ch"
+                height="100ch"
+              />
+            </div>
+            <div>
+              <h2 className="projectTitle">Arkanoid Game</h2>
+            </div>
+          </div>
+          <p>
+            Object: Project based on the development of an interactive react
+            page where the user can enjoy trying out a simple game with
+            attractive graphics
+          </p>
+          <p>Tools: React-Three-Fiber React-Three-Cannon React CSS</p>
+          <p>
+            Focus: A style exercise to explore react hooks and the possibilities
+            offered by Three.js graphics
+          </p>
+          <div className="flexB">
+            <div>
+              <a href="https://github.com/gianmarialessandro/arkanoid">
+                <img
+                  src="./img/icons/github.svg"
+                  alt="github"
+                  width="55ch"
+                  height="35ch"
+                />
               </a>
             </div>
           </div>
@@ -150,9 +187,7 @@ const Portfolio = () => {
               />
             </div>
             <div>
-              <h2 className="projectTitle">
-                Product release &amp; end-of-life database
-              </h2>
+              <h2 className="projectTitle">EoL &amp; Product release</h2>
             </div>
           </div>
           <p>

@@ -13,12 +13,13 @@ const Home = () => {
   const [projects, setProjects] = useState("");
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    
     clearPortfolioPage()
     clearContactPage()
     clearAboutPage()
     clearArkanoidPage()
     fixHomePage();
+    document.body.style.overflow = "hidden";
   }, []);
 
   setTimeout(() => {
