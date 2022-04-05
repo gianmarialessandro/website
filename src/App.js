@@ -1,9 +1,25 @@
-import React from 'react';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./home";
+import About from "./about";
+import Contact from "./contact";
+import Portfolio from "./portfolio";
+import Arkanoid from "./arkanoid";
+
 import './App.css';
 
 function App() {
   return (
-    <div><h1>ciao</h1></div>
+    <>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/arkanoid" element={<Arkanoid />} />
+      </Routes>
+    </>
   );
 }
 
