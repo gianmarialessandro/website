@@ -53,7 +53,7 @@ const Home = () => {
           <ul>
             <li className="out">
               <img
-                src="./img/icons/navBarIcon.png"
+                src="./img/icons/navbar.svg"
                 alt="navBar"
                 width="40vh"
                 height="40vh"

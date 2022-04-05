@@ -88,12 +88,12 @@ body.portfolio {
   color: #00204a;
 }
 
-.arkanoid {
+.arkanoidCSS {
   background: #005792;
   color: #e3e3e3;
 }
 
-.arkanoid:hover {
+.arkanoidCSS:hover {
   background: #00bbf0;
   opacity: 0.8;
   color:  #00204a;  
@@ -109,7 +109,7 @@ body.portfolio {
 }
 
 .eol {
-  background: #3fc5f0;/*#385170;*/
+  background: #e3e3e3;/*#385170;*/
   color: #00204a;
 }
 .eol:hover {

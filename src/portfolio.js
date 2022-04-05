@@ -26,7 +26,7 @@ const Portfolio = () => {
         <ul>
           <li className="out">
             <img
-              src="./img/icons/navBarIcon.png"
+              src="./img/icons/navbar.svg"
               alt="navBar"
               width="40vh"
               height="40vh"
@@ -96,7 +96,7 @@ const Portfolio = () => {
             </div>
           </div>
         </article>
-        <article className="project arkanoid grid-col-span2">
+        <article className="project arkanoidCSS grid-col-span2">
           <div className="flex">
             <div className="imgAndTitleDiv">
               <img

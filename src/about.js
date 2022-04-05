@@ -1,13 +1,17 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { fixAboutPage, clearAboutPage } from "./utils";
+import { fixAboutPage,  clearPortfolioPage, clearArkanoidPage, clearContactPage, clearHomePage } from "./utils";
 
 import './about.css';
 
 
 const About = () => {
     useEffect(() => {
-      document.body.style.overflow = "hidden";
+      clearPortfolioPage()
+      clearContactPage()
+      clearArkanoidPage()
+      clearHomePage()
+      // document.body.style.overflow = "hidden";
       fixAboutPage();
     }, []);
   
