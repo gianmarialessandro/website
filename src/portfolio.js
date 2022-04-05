@@ -61,7 +61,9 @@ const Portfolio = () => {
               />
             </div>
             <div>
-              <h2 className="projectTitle">City Map</h2>
+              <a href="https://github.com/gianmarialessandro/City-Map">
+                <h2 className="projectTitle">City Map</h2>
+              </a>
             </div>
           </div>
           <p>
@@ -107,7 +109,9 @@ const Portfolio = () => {
               />
             </div>
             <div>
-              <h2 className="projectTitle">Arkanoid Game</h2>
+              <Link className="a" to="/arkanoid">
+                <h2 className="projectTitle">Arkanoid Game</h2>
+              </Link>
             </div>
           </div>
           <p>
@@ -144,7 +148,9 @@ const Portfolio = () => {
               />
             </div>
             <div>
-              <h2 className="projectTitle">Social Network Automation</h2>
+              <a href="https://github.com/gianmarialessandro/Social-Network-Automation">
+                <h2 className="projectTitle">Social Network Automation</h2>
+              </a>
             </div>
           </div>
           <p>
@@ -187,7 +193,9 @@ const Portfolio = () => {
               />
             </div>
             <div>
-              <h2 className="projectTitle">EoL &amp; Product release</h2>
+              <a href="https://github.com/gianmarialessandro/End-Of-Life">
+                <h2 className="projectTitle">EoL &amp; Product release</h2>
+              </a>
             </div>
           </div>
           <p>
@@ -229,7 +237,9 @@ const Portfolio = () => {
               />
             </div>
             <div>
-              <h2 className="projectTitle">Quiz</h2>
+              <a href="https://github.com/gianmarialessandro/Quiz">
+                <h2 className="projectTitle">Quiz</h2>
+              </a>
             </div>
           </div>
           <p>Object: small program to create a quiz game</p>
@@ -262,7 +272,9 @@ const Portfolio = () => {
               />
             </div>
             <div>
-              <h2 className="projectTitle">Blog</h2>
+              <a href="https://github.com/gianmarialessandro/blogAufgabe">
+                <h2 className="projectTitle">Blog</h2>
+              </a>
             </div>
           </div>
           <p>Object: small program to create a blog site</p>

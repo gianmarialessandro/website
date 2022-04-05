@@ -94,6 +94,7 @@ const Arkanoid = () => {
     fixArkanoidPage();
     document.body.style.overflow = "hidden";
   }, []);
+  // const { viewport } = useThree();
 
   return (
     <div className="main-Arkanoid">
@@ -124,8 +125,9 @@ const Arkanoid = () => {
         </ul>
       </nav>
       <Canvas
-        camera={{ position: [0, 5, 12], fov: 50 }}
+        camera={{ position: [0, 5, 12], fov: 55 }}
         style={{ background: "#242438" }}
+        performance={{ min: 0.1, max: 1 }}
       >
         <ambientLight intensity={0.3} />
         <pointLight position={[10, 10, 5]} />

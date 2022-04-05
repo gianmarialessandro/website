@@ -1,6 +1,90 @@
 body.contact {
-    background: #ff00ff;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  min-width: 390px;
+}
+
+.firstLine {
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-size: clamp(2rem, 6vw, 4rem);
+    text-align: center;
+    white-space: wrap;
+    margin: 1rem;
+    color: black;
+}
+.firstLine:hover {
+    color: white;
+    text-shadow: 0 0 0.05em hsl(0, 0%, 100%), 0 0 0.5em black;
+}
+
+.cantact-flex {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(1rem, 2vw, 3rem);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-around;
+  min-width: 390px;
+  gap: 1rem;
+}
+
+.linkedin-flex {
+  text-align: center;
+  background: #233142;
+  color: #a5def1;
+  border: solid;
+  border-radius: 0.5em;
+  padding: 0.75rem;
+}
+.linkedin-flex:hover {
+  background: #a5def1;
+  color: #233142;
+  border: dotted;
+  border-radius: 0.9em;
+  padding: 0.75rem;
+  box-shadow: 0 0 2em 0.5em #233142;
+}
+
+.email-flex {
+  text-align: center;
+  background: #6a759b;
+  color: #233142;
+  border: solid;
+  border-radius: 0.5em;
+  padding: 0.75rem;
+}
+.email-flex:hover {
+  background: #233142;
+  color: #a5def1;
+  border: dotted;
+  border-radius: 0.9em;
+  padding: 0.75rem;
+  box-shadow: 0 0 2em 0.5em #e3e3e3;
+}
+
+.github-flex {
+  text-align: center;
+  background: #a5def1;
+  border: solid;
+  border-radius: 0.5em;
+  padding: 0.75rem;
+}
+.github-flex:hover {
+  border: dotted;
+  background: #233142;
+  color: #a5def1;
+  border-radius: 0.9em;
+  padding: 0.75rem;
+  box-shadow: 0 0 2em 0.5em #e3e3e3;
+}
+
+.contact-title {
+  padding: 1.5rem;
+}
+
+.contact-icon {
+  justify-content: center;
+  padding: 1.5rem;
 }

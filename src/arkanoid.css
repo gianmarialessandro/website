@@ -10,9 +10,9 @@ body.arkanoid {
   -ms-user-select: none;
   user-select: none;
   overflow: hidden;
+  min-width: 390px;
 
   position: fixed;
-  overflow: hidden;
   overscroll-behavior-y: none;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
@@ -21,7 +21,7 @@ body.arkanoid {
   cursor: url("https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png")
       39 39,
     auto;
-  image-rendering: pixelated;
+  image-rendering: auto;
 }
 
 .main-Arkanoid {
@@ -34,7 +34,6 @@ body.arkanoid {
 .navBarArkanoid ul {
     position: relative;
     z-index: 3;
-    /* padding-top: 5rem; */
 }
 
 .navBarArkanoid .out {
