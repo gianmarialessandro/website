@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { fixHomePage, clearHomePage, hiddenOverflow } from "./utils";
+import { fixHomePage, clearPortfolioPage, clearAboutPage, clearContactPage, clearArkanoidPage } from "./utils";
 import HomeAnimation from "./homeAnimation";
 import "./home.css";
 
@@ -13,7 +13,11 @@ const Home = () => {
   const [projects, setProjects] = useState("");
 
   useEffect(() => {
-    hiddenOverflow();
+    document.body.style.overflow = "hidden";
+    clearPortfolioPage()
+    clearContactPage()
+    clearAboutPage()
+    clearArkanoidPage()
     fixHomePage();
   }, []);
 
@@ -40,7 +44,9 @@ const Home = () => {
   return (
     <>
       <div className="div-container">
-        <div className="canvas"><HomeAnimation /></div>
+        <div className="canvas">
+          <HomeAnimation />
+        </div>
 
         <nav>
           <ul>
@@ -52,10 +58,18 @@ const Home = () => {
                 height="40vh"
               />
               <div className="inhouse">
-                <Link className="a" to="/portfolio">PORTFOLIO</Link>
-                <Link className="a" to="/about">ABOUT</Link>
-                <Link className="a" to="/contact">CONTACT</Link>
-                <Link className="a" to="/arkanoid">GAME</Link>
+                <Link className="a" to="/portfolio">
+                  PORTFOLIO
+                </Link>
+                <Link className="a" to="/about">
+                  ABOUT
+                </Link>
+                <Link className="a" to="/contact">
+                  CONTACT
+                </Link>
+                <Link className="a" to="/arkanoid">
+                  GAME
+                </Link>
               </div>
             </li>
           </ul>

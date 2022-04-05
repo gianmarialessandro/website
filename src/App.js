@@ -7,13 +7,13 @@ import Contact from "./contact";
 import Portfolio from "./portfolio";
 import Arkanoid from "./arkanoid";
 
-import './App.css';
+// import './App.css';
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />

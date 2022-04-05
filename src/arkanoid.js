@@ -6,7 +6,7 @@ import "./arkanoid.css";
 
 const Arkanoid = () => {
   useEffect(() => {
-    hiddenOverflow();
+    document.body.style.overflow = "hidden";
     fixArkanoidPage();
   }, []);
 

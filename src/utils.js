@@ -1,7 +1,7 @@
 // Overflow hidden
-export function hiddenOverflow() {
-    document.body.style.overflow = "hidden";
-}
+// export function hiddenOverflow() {
+//     document.body.style.overflow = "hidden";
+// }
 
 // home
 export function fixHomePage() {
