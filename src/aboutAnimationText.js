@@ -29,7 +29,7 @@ function Text1() {
   return (
     <text
       position-z={0}
-      position-x={0}
+      position-x={}
       //   rotation={rotation}
       {...opts}
       text={title}
