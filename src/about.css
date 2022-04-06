@@ -1,6 +1,15 @@
-body.about {
-    /* background: 'orange'; */
+
+body.about{
+    background: orange;
     width: 100%;
     height: 100%;
-    /* position: absolute; */
+    z-index: 1;
+}
+
+.canvas-About {
+    background: orange;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
 }

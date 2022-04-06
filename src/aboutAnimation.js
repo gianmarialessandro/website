@@ -27,6 +27,16 @@ import "./about.css";
 //   );
 // }
 
+const CorniceOrizzontale = (props) =>{
+
+  return(
+    <mesh {...props}>
+      <boxBufferGeometry args={[3.5, 0.3, 0.8]} />
+      <meshStandardMaterial color={'green'}/>
+    </mesh>
+  )
+}
+
 function AboutAnimation() {
   return (
     <div className="canvas">
@@ -35,7 +45,7 @@ function AboutAnimation() {
         <MapControls />
         <ambientLight intensity={0.2} />
         <pointLight position={[10, 10, 15]} intensity={0.5} />
-        {/* <Rettangoli position={[0, -2, 0]} /> */}
+        <CorniceOrizzontale position={[-5, -1.5, 0]} />
         <Testo1 />
       </Canvas>
     </div>

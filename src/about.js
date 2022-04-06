@@ -24,7 +24,6 @@ const About = () => {
 
   return (
     <div className="div-container-About">
-      <div className="canvas-About"><AboutAnimation/></div>
 
       <nav>
         <ul>
@@ -52,6 +51,10 @@ const About = () => {
           </li>
         </ul>
       </nav>
+      <div className="canvas-About">
+        <AboutAnimation/>
+      </div>
+
     </div>
   );
 };
