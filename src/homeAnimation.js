@@ -111,7 +111,6 @@ const Box = (props) => {
 
 function HomeAnimation() {
   return (
-    <div className="canvas">
       <Canvas
         style={{}}
         camera={{ position: [0, 0, -14] }}
@@ -134,7 +133,6 @@ function HomeAnimation() {
           <Box />
         </SpinReverse>
       </Canvas>
-    </div>
   );
 }
 

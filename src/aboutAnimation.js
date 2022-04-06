@@ -39,8 +39,8 @@ const CorniceOrizzontale = (props) =>{
 
 function AboutAnimation() {
   return (
-    <div className="canvas">
-      <Canvas style={{ background: "orange" }}>
+    <div className="canvas-Home">
+      <Canvas style={{ background: "#455d7a" }}>
         <OrbitControls />
         <MapControls />
         <ambientLight intensity={0.2} />
