@@ -1,20 +1,37 @@
 body.contact {
-  min-width: 390px;
+  /* background: black; */
+  width: 100%;
+  height: 100%;
+  /* min-width: 390px; */
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+.gradient-C {
+  background: white;
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .firstLine {
-    display: block;
-    font-family: "Raleway", sans-serif;
-    font-size: clamp(2rem, 6vw, 4rem);
-    text-align: center;
-    white-space: wrap;
-    margin: 1rem;
-    color: black;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  text-align: center;
+  white-space: wrap;
+  margin: 1rem;
+  color: black;
 }
 .firstLine:hover {
-    color: white;
-    text-shadow: 0 0 0.05em hsl(0, 0%, 100%), 0 0 0.5em black;
-    transition: text-shadow 1500ms linear;
+  color: white;
+  text-shadow: 0 0 0.05em hsl(0, 0%, 100%), 0 0 0.5em black;
+  transition: text-shadow 1500ms linear;
 }
 
 .cantact-flex {
@@ -27,7 +44,7 @@ body.contact {
   justify-content: space-around;
   align-items: stretch;
   align-content: space-around;
-  min-width: 390px;
+  /* min-width: 390px; */
   gap: 1rem;
 }
 
@@ -47,7 +64,6 @@ body.contact {
   padding: 0.75rem;
   box-shadow: 0 0 2em 0.5em #233142;
   transition: box-shadow 1000ms linear;
-
 }
 
 .email-flex {
@@ -66,7 +82,6 @@ body.contact {
   padding: 0.75rem;
   box-shadow: 0 0 2em 0.5em #233142;
   transition: box-shadow 1000ms linear;
-
 }
 
 .github-flex {
@@ -94,3 +109,81 @@ body.contact {
   justify-content: center;
   padding: 1.5rem;
 }
+
+/* NAV BAR ---------------------------------*/
+
+.ul-Contact {
+  position: fixed;
+  overflow: hidden;
+  list-style-type: none;
+  margin-top: 0.5rem;
+  margin-left: -1rem;
+  padding-top: 0;
+}
+
+.out-Contact {
+  float: left;
+}
+
+.out-Contact .a {
+  text-decoration: none;
+  color: #e3e3e3;
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(0.85rem, 1.5vw, 1.5rem);
+  text-align: center;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  margin-left: 0.2em;
+  display: inline-block;
+}
+
+.inhouse-Contact {
+  display: none;
+  min-width: 3rem;
+}
+
+.inhouse-Contact a {
+  color: #e3e3e3;
+  display: inline-block;
+  text-align: center;
+}
+
+.out-Contact {
+  display: inline-block;
+}
+
+.out-Contact a:hover {
+  background-color: #233142;
+  color: #e3e3e3;
+}
+
+.out-Contact:hover .inhouse-Contact {
+  display: inline-block;
+}
+
+.out-Contact:hover .img-Contact {
+  display: none;
+}
+
+/* NAV BAR END---------------------------------*/
+
+
+@media only screen and (max-width: 768px) {
+  .cantact-flex {
+    max-width: 750;
+    gap: 0.2rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    scroll-behavior: smooth;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .cantact-flex {
+    max-width: 360;
+    gap: 0.2rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    scroll-behavior: smooth;
+  }
+}
+

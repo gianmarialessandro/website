@@ -99,32 +99,33 @@ const Arkanoid = () => {
 
   return (
     <div className="main-Arkanoid">
-      <nav className="navBarArkanoid">
-        <ul>
-          <li className="out">
-            <img
-              src="./img/icons/navbarBlue.png"
-              alt="navBar"
-              width="40vh"
-              height="40vh"
-            />
-            <div className="inhouse">
-              <Link className="a" to="/">
-                HOME
-              </Link>
-              <Link className="a" to="/portfolio">
-                PORTFOLIO
-              </Link>
-              <Link className="a" to="/about">
-                ABOUT
-              </Link>
-              <Link className="a" to="/contact">
-                CONTACT
-              </Link>
-            </div>
-          </li>
-        </ul>
-      </nav>
+      <nav className="nav-Home">
+          <ul className="ul-Home">
+            <li className="out-Home">
+              <img
+                src="./img/icons/navbarBlue.png"
+                alt="navBar"
+                width="50vh"
+                height="50vh"
+                className="img-Home"
+              />
+              <div className="inhouse-Home">
+                <Link className="a" to="/portfolio">
+                  PORTFOLIO
+                </Link>
+                <Link className="a" to="/about">
+                  ABOUT
+                </Link>
+                <Link className="a" to="/contact">
+                  CONTACT
+                </Link>
+                <Link className="a" to="/arkanoid">
+                  GAME
+                </Link>
+              </div>
+            </li>
+          </ul>
+        </nav>
       <Canvas
         camera={{ position: [0, 5, 12], fov: 55 }}
         style={{ background: "#242438" }}

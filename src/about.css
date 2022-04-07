@@ -1,77 +1,98 @@
-
-body.about{
-    background: orange;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+body.about {
+  background: orange;
+  width: 100%;
+  height: 100%;
+  min-width: 390px;
+  position: absolute;
+  z-index: -2;
+  margin: 0;
+  padding: 0;
 }
 
 /* .div-container-About {
-    background: orange;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-
+  background: green;
 } */
 
 .canvas-About {
-    padding: 2em;
-    margin: 0;
-    
-
+  background: orange;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
 }
 
 /* NAV BAR ---------------------------------*/
 
 .ul-About {
-    overflow: hidden;
-    list-style-type: none;
-    margin-top: 0;
-    margin-left: 1rem;
-    padding-top: -4rem;
-    padding-left: 0.5rem;
+  position: fixed;
+  overflow: hidden;
+  list-style-type: none;
+  margin-top: 0.5rem;
+  margin-left: -1rem;
+  padding-top: 0.5rem;
+}
+
+.out-About {
+  float: left;
+}
+
+.out-About .a {
+  text-decoration: none;
+  color: #e3e3e3;
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(0.85rem, 1.5vw, 1.5rem);
+  text-align: center;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  margin-left: 0.2em;
+  display: inline-block;
+}
+
+.inhouse-About {
+  display: none;
+  min-width: 3rem;
+}
+
+.inhouse-About a {
+  color: #e3e3e3;
+  display: inline-block;
+  text-align: center;
+}
+
+.out-About {
+  display: inline-block;
+}
+
+/* .out-About a:hover {
+  background-color: #233142;
+  color: #e3e3e3;#455d7a
+} */
+.out-About a:hover {
+  color: #455d7a;
+}
+
+.out-About:hover .inhouse-About {
+  display: inline-block;
+}
+
+.out-About:hover .img-About {
+  display: none;
+}
+
+/* NAV BAR END---------------------------------*/
+
+
+
+@media only screen and (max-width: 420px) {
+  .canvas-About {
+    width: 390px;
+    /* height: 100%; */
   }
-  
-  .out-About {
-    float: left;
+}
+
+@media only screen and (max-width: 790px) {
+  .canvas-About {
+    width: 750px;
   }
-  
-  .out-About a {
-    text-decoration: none;
-    color: #e3e3e3;
-    font-family: "Raleway", sans-serif;
-    font-size: clamp(0.85rem, 1.5vw, 1.5rem);
-    text-align: center;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem ;
-    margin-left: 0.2em;
-    display: inline-block;
-    /* position: fixed; */
-  }
-  
-  .inhouse-About {
-    display: none;
-    position: absolute;
-    min-width: 3rem;
-  }
-  
-  .inhouse-About a {
-    color: #e3e3e3;
-    display: inline-block;
-    text-align: center;
-    
-  }
-  
-  .out-About {
-    display: inline-block;
-  }
-  
-  .out-About a:hover {
-    background-color: #233142;
-    color: #e3e3e3;
-  }
-  
-  .out-About:hover .inhouse-About {
-    display: inline-block;
-  }
-  /* NAV BAR END---------------------------------*/
+}

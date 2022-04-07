@@ -18,13 +18,12 @@ const About = () => {
     clearArkanoidPage();
     clearHomePage();
     fixAboutPage();
-    // document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
 
   }, []);
 
   return (
     <div className="div-container-About">
-
       <nav className="nav-About">
         <ul className="ul-About">
           <li className="out-About">
@@ -33,6 +32,7 @@ const About = () => {
               alt="navBar"
               width="40vh"
               height="40vh"
+              className="img-About"
             />
             <div className="inhouse-About">
               <Link className="a" to="/">
@@ -54,7 +54,6 @@ const About = () => {
       <div className="canvas-About">
         <AboutAnimation/>
       </div>
-
     </div>
   );
 };

@@ -22,16 +22,17 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-main">
-      <nav className="navportfolio">
-        <ul>
-          <li className="out">
+      <nav className="nav-Port">
+        <ul className="ul-Port">
+          <li className="out-Port">
             <img
               src="./img/icons/navbar.svg"
               alt="navBar"
               width="40vh"
               height="40vh"
+              className="img-Port"
             />
-            <div className="inhouse">
+            <div className="inhouse-Port">
               <Link className="a" to="/">
                 HOME
               </Link>

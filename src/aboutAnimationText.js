@@ -7,8 +7,8 @@ import { useSpring, a } from "@react-spring/three";
 // Register Text as a react-three-fiber element
 extend({ Text });
 
-const title = "I am a front-end developer based in Berlin. I have an interest in animations and creating intuitive and dynamic user experiences. I am interested in the whole frontend spectrum but would like to develop on the backend side as well. The tools I am most familiar with are JavaScript, React and Node.js.";
-
+const testoAbout =
+  "Based in Berlin, I have an interest in animations and creating intuitive and dynamic user experiences. I am looking at the whole frontend spectrum but would also like to develop on the backend side.";
 function Text1() {
   const [hovered, setHovered] = useState(false);
   // const { color } = useSpring({
@@ -18,9 +18,9 @@ function Text1() {
   const [opts] = useState({
     font: "Comfortaa",
     fontSize: 0.25,
-    color: "#e3e3e3",
+    color: "#455d7a",
     maxWidth: 3.5,
-    lineHeight: 1,
+    lineHeight: 1.5,
     letterSpacing: 0,
     textAlign: "center",
     materialType: "MeshStandardMaterial",
@@ -32,7 +32,7 @@ function Text1() {
       position-x={0}
       //   rotation={rotation}
       {...opts}
-      text={title}
+      text={testoAbout}
       font={fonts[opts.font]}
       anchorX="center"
       anchorY="middle"
@@ -44,7 +44,6 @@ function Text1() {
     </text>
   );
 }
-
 
 function Testo1() {
   return (

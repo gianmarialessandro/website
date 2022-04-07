@@ -17,37 +17,38 @@ const Contact = () => {
     clearAboutPage();
     clearArkanoidPage();
     fixContactPage();
-    document.body.style.overflow = "visble";
+    // document.body.style.overflow = "visble";
   }, []);
 
   return (
     <div className="gradient-C">
-      <nav>
-        <ul>
-          <li className="out">
-            <img
-              src="./img/icons/navbar.svg"
-              alt="navBar"
-              width="40vh"
-              height="40vh"
-            />
-            <div className="inhouse">
-              <Link className="a" to="/">
-                HOME
-              </Link>
-              <Link className="a" to="/portfolio">
-                PORTFOLIO
-              </Link>
-              <Link className="a" to="/about">
-                ABOUT
-              </Link>
-              <Link className="a" to="/arkanoid">
-                GAME
-              </Link>
-            </div>
-          </li>
-        </ul>
-      </nav>
+      <nav className="nav-Contact">
+          <ul className="ul-Contact">
+            <li className="out-Contact">
+              <img
+                src="./img/icons/navbar.svg"
+                alt="navBar"
+                width="50vh"
+                height="50vh"
+                className="img-Contact"
+              />
+              <div className="inhouse-Contact">
+                <Link className="a" to="/portfolio">
+                  PORTFOLIO
+                </Link>
+                <Link className="a" to="/about">
+                  ABOUT
+                </Link>
+                <Link className="a" to="/contact">
+                  CONTACT
+                </Link>
+                <Link className="a" to="/arkanoid">
+                  GAME
+                </Link>
+              </div>
+            </li>
+          </ul>
+        </nav>
       <div className="firstLine">
       <h1 >let's stay in touch</h1>
       </div>
