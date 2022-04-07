@@ -2,16 +2,16 @@ body.about {
   background: orange;
   width: 100%;
   height: 100%;
-  min-width: 390px;
+  min-width: 360px;
   position: absolute;
   z-index: -2;
   margin: 0;
   padding: 0;
 }
 
-/* .div-container-About {
+.div-container-About {
   background: green;
-} */
+}
 
 .canvas-About {
   background: orange;
@@ -76,23 +76,32 @@ body.about {
   display: inline-block;
 }
 
-.out-About:hover .img-About {
+/* .out-About:hover .img-About {
   display: none;
-}
+} */
 
 /* NAV BAR END---------------------------------*/
 
 
 
-@media only screen and (max-width: 420px) {
-  .canvas-About {
-    width: 390px;
-    /* height: 100%; */
+ @media only screen and (max-width: 420px) {
+  body.about {
+  background: orange;
+  /* min-width: 420px; */
+  /* width: 390px; */
+  /* height: 100%; */
+  /* min-width: 360px; */
+  padding: 0;
+  margin: 0;
   }
-}
+    
+  .canvas-About {
+    
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    }
+} 
 
-@media only screen and (max-width: 790px) {
-  .canvas-About {
-    width: 750px;
-  }
-}

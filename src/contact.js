@@ -33,14 +33,14 @@ const Contact = () => {
                 className="img-Contact"
               />
               <div className="inhouse-Contact">
+                <Link className="a" to="/">
+                  HOME
+                </Link>
                 <Link className="a" to="/portfolio">
                   PORTFOLIO
                 </Link>
                 <Link className="a" to="/about">
                   ABOUT
-                </Link>
-                <Link className="a" to="/contact">
-                  CONTACT
                 </Link>
                 <Link className="a" to="/arkanoid">
                   GAME
@@ -49,6 +49,7 @@ const Contact = () => {
             </li>
           </ul>
         </nav>
+      <div className="container-Contacts">
       <div className="firstLine">
       <h1 >let's stay in touch</h1>
       </div>
@@ -97,6 +98,7 @@ const Contact = () => {
             />
           </a>
         </div>
+      </div>
       </div>
     </div>
   );

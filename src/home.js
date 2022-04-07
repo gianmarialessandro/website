@@ -85,39 +85,39 @@ const Home = () => {
 
     setTimeout(() => {
       setE("e");
-    }, 300);
+    }, 200);
 
     setTimeout(() => {
       setL("l");
-    }, 500);
+    }, 300);
 
     setTimeout(() => {
       setLL("l");
-    }, 700);
+    }, 400);
 
     setTimeout(() => {
       setO("o");
-    }, 900);
+    }, 500);
 
     setTimeout(() => {
       setVirgola(", ");
-    }, 1100);
+    }, 600);
 
     setTimeout(() => {
       setI("I");
-    }, 1300);
+    }, 700);
 
     setTimeout(() => {
       setApostrofo("'");
-    }, 1500);
+    }, 800);
 
     setTimeout(() => {
       setM("m ");
-    }, 1700);
+    }, 900);
 
     setTimeout(() => {
       setA("A");
-    }, 1900);
+    }, 1000);
 
     setTimeout(() => {
       setAl("l");
@@ -125,179 +125,179 @@ const Home = () => {
 
     setTimeout(() => {
       setAle("e");
-    }, 2300);
+    }, 1100);
 
     setTimeout(() => {
       setAles("s");
-    }, 2500);
+    }, 1200);
 
     setTimeout(() => {
       setAless("s");
-    }, 2700);
+    }, 1300);
 
     setTimeout(() => {
       setAlessa("a");
-    }, 2900);
+    }, 1400);
 
     setTimeout(() => {
       setAlessan("n");
-    }, 3100);
+    }, 1500);
 
     setTimeout(() => {
       setAlessand("d");
-    }, 3300);
+    }, 1600);
 
     setTimeout(() => {
       setAlessandr("r");
-    }, 3500);
+    }, 1700);
 
     setTimeout(() => {
       setAlessandro("o");
-    }, 3700);
+    }, 1800);
 
     setTimeout(() => {
       setAlessandroM(" M");
-    }, 3900);
+    }, 1900);
 
     setTimeout(() => {
       setMo("o");
-    }, 4100);
+    }, 2000);
 
     setTimeout(() => {
       setMor("r");
-    }, 4300);
+    }, 2100);
 
     setTimeout(() => {
       setMore("e");
-    }, 4500);
+    }, 2200);
 
     setTimeout(() => {
       setMoret("t");
-    }, 4700);
+    }, 2300);
 
     setTimeout(() => {
       setMorett("t");
-    }, 4900);
+    }, 2400);
 
     setTimeout(() => {
       setMoretti("i");
-    }, 5100);
+    }, 2500);
 
     setTimeout(() => {
       setPoint(".");
-    }, 5300);
+    }, 2600);
 
     setTimeout(() => {
       setSi("I");
-    }, 5500);
+    }, 2700);
 
     setTimeout(() => {
       setSapostrofo("'");
-    }, 5700);
+    }, 2800);
 
     setTimeout(() => {
       setSm("m ");
-    }, 5900);
+    }, 2900);
 
     setTimeout(() => {
       setAarticolo("a ");
-    }, 6100);
+    }, 3000);
 
     setTimeout(() => {
       setJ("J");
-    }, 6300);
+    }, 3100);
 
     setTimeout(() => {
       setJu("u");
-    }, 6500);
+    }, 3200);
 
     setTimeout(() => {
       setJun("n");
-    }, 6700);
+    }, 3300);
 
     setTimeout(() => {
       setJuni("i");
-    }, 6900);
+    }, 3400);
 
     setTimeout(() => {
       setJunio("o");
-    }, 7100);
+    }, 3500);
 
     setTimeout(() => {
       setJunior("r ");
-    }, 7300);
+    }, 3600);
 
     setTimeout(() => {
       setJuniorS("S");
-    }, 7500);
+    }, 3700);
 
     setTimeout(() => {
       setSo("o");
-    }, 7700);
+    }, 3800);
 
     setTimeout(() => {
       setSof("f");
-    }, 7900);
+    }, 3900);
 
     setTimeout(() => {
       setSoft("t");
-    }, 8100);
+    }, 4000);
 
     setTimeout(() => {
       setSoftw("w");
-    }, 8300);
+    }, 4100);
 
     setTimeout(() => {
       setSoftwa("a");
-    }, 8500);
+    }, 4200);
 
     setTimeout(() => {
       setSoftwar("r");
-    }, 8700);
+    }, 4300);
 
     setTimeout(() => {
       setSoftware("e ");
-    }, 8900);
+    }, 4400);
 
     setTimeout(() => {
       setSoftwareD("D");
-    }, 9100);
+    }, 4500);
 
     setTimeout(() => {
       setDe("e");
-    }, 9300);
+    }, 4600);
 
     setTimeout(() => {
       setDev("v");
-    }, 9500);
+    }, 4700);
 
     setTimeout(() => {
       setDeve("e");
-    }, 9700);
+    }, 4800);
 
     setTimeout(() => {
       setDevel("l");
-    }, 9900);
+    }, 4900);
 
     setTimeout(() => {
       setDevelo("o");
-    }, 10100);
+    }, 5000);
 
     setTimeout(() => {
       setDevelop("p");
-    }, 10300);
+    }, 5100);
 
     setTimeout(() => {
       setDevelope("e");
-    }, 10500);
+    }, 5200);
 
     setTimeout(() => {
       setDeveloper("r");
-    }, 10700);
+    }, 5300);
 
     setTimeout(() => {
       setSpoint(".");
-    }, 10900);
+    }, 5400);
 
     setTimeout(() => {
       setProjects(
@@ -307,7 +307,7 @@ const Home = () => {
           "View my projects"
         )
       );
-    }, 11100);
+    }, 5900);
   };
 
   timeOut();

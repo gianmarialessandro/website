@@ -36,6 +36,6 @@ body.arkanoid {
     z-index: 3;
 }
 
-.navBarArkanoid .out-Arkanoid {
+/* .navBarArkanoid .out-Arkanoid {
     display: inline-block;
-}
+} */
