@@ -99,17 +99,20 @@ const Arkanoid = () => {
 
   return (
     <div className="main-Arkanoid">
-      <nav className="nav-Home">
-          <ul className="ul-Home">
-            <li className="out-Home">
+      <nav className="nav-Arkanoid">
+          <ul className="ul-Arkanoid">
+            <li className="out-Arkanoid">
               <img
                 src="./img/icons/navbarBlue.png"
                 alt="navBar"
                 width="50vh"
                 height="50vh"
-                className="img-Home"
+                className="img-Arkanoid"
               />
-              <div className="inhouse-Home">
+              <div className="inhouse-Arkanoid">
+                <Link className="a" to="/">
+                  HOME
+                </Link>
                 <Link className="a" to="/portfolio">
                   PORTFOLIO
                 </Link>
@@ -118,9 +121,6 @@ const Arkanoid = () => {
                 </Link>
                 <Link className="a" to="/contact">
                   CONTACT
-                </Link>
-                <Link className="a" to="/arkanoid">
-                  GAME
                 </Link>
               </div>
             </li>

@@ -17,7 +17,7 @@ const Contact = () => {
     clearAboutPage();
     clearArkanoidPage();
     fixContactPage();
-    // document.body.style.overflow = "visble";
+    document.body.style.overflow = "visble";
   }, []);
 
   return (

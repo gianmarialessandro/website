@@ -124,13 +124,13 @@ function HomeAnimation() {
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 15]} intensity={0.5} />
         <Spin>
-          <Cone />
+          {/* <Cone /> */}
         </Spin>
         <SpinSun>
           <Sphere />
         </SpinSun>
         <SpinReverse>
-          <Box />
+          <Box position={[-0.5, -0.5, 1]} />
         </SpinReverse>
       </Canvas>
   );
