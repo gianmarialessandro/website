@@ -22,3 +22,10 @@
 * npm i @react-spring/three   https://www.npmjs.com/package/@react-spring/three
 * npm i troika-three-text     https://www.npmjs.com/package/troika-three-text
 
+
+### to improve
+
+* Animation 
+* About page 
+* Contact Page
+* performance in small device
