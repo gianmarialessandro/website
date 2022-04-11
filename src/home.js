@@ -347,6 +347,7 @@ const Home = () => {
           </ul>
         </nav>
 
+        
         <div className="main-Home">
           <div className="header-Home">
             <h2>
