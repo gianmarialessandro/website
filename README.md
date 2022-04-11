@@ -16,6 +16,7 @@
 
 * npm i react-router-dom      https://www.npmjs.com/package/react-router-dom
 
+* npm i three 
 * npm i @react-three/fiber    https://www.npmjs.com/package/@react-three/fiber
 * npm i @react-three/drei     https://www.npmjs.com/package/@react-three/drei
 * npm i @react-three/cannon   https://www.npmjs.com/package/@react-three/cannon
