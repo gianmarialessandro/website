@@ -1,25 +1,25 @@
-import React from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stars } from "@react-three/drei";
+import React, { useRef } from "react";
+import { Canvas, useLoader, useFrame } from "@react-three/fiber";
+import { OrbitControls, Stars, Cloud, Sky, Float } from "@react-three/drei";
 import * as THREE from "three";
 // import { Physics, useBox, useSphere } from "@react-three/cannon";
+
 import "./App.css";
 
-const Sun = (props) => {
-
+const Box = () => {
   return (
-    <mesh {...props}>
-      <sphereBufferGeometry args={[60, 64, 64]} />
-      <meshStandardMaterial color={'yellow'} />
+    <mesh>
+      <boxBufferGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color={'orange'} />
     </mesh>
   )
 }
-
+ 
 function HomeAnimation() {
   return (
     <Canvas
       style={{}}
-      camera={{ position: [0, 0, 25] }}
+      camera={{ position: [0, -15, 25] }}
       onCreated={({ gl }) => {
         gl.shadowMap.enabled = true;
         gl.shadowMap.type = THREE.PCFShadowMap;
@@ -28,158 +28,31 @@ function HomeAnimation() {
       <OrbitControls />
       <ambientLight intensity={0.5} />
       <pointLight position={[10, 10, 15]} intensity={0.5} />
-      <Stars />
-      <Sun position={[250, 0, 0]}/>
+      {/* <Stars
+        radius={50}
+        depth={50}
+        count={1000}
+        factor={4}
+        saturation={0}
+        fade
+        speed={1}
+      />
+      <Sky
+        distance={1000}
+        sunPosition={[-40, 10, 0]}
+        inclination={0}
+        azimuth={0.25}
+      />
+      <Float 
+        speed={30} // Animation speed, defaults to 1
+        rotationIntensity={40} // XYZ rotation intensity, defaults to 1
+        floatIntensity={10} // Up/down float intensity, defaults to 1
+      >
+        <Box />
+      </Float> */}
     </Canvas>
   );
 }
 
 export default HomeAnimation;
 
-
-
-
-// ----------------------------------------------------------------------------
-// const Sfera = (props) => {
-  //   const [ref, api] = useSphere(() => ({ mass: 0.1, ...props }));
-  //   // console.log("ref= ", ref)
-  //   // console.log("api= ",api)
-  
-  //   return (
-  //     <mesh 
-  //       ref={ref} 
-  //       {...props}
-  //       onClick={() => {
-  //         api.velocity.set(0, 10, 0)   
-               
-  //       }}
-  //     >
-  //       <sphereBufferGeometry args={[1.2, 60, 60]} />
-  //       <meshStandardMaterial {...props} />
-  //     </mesh>
-  //   );
-  // };
-  
-  // const BoxPalla = (props) => {
-  //   const [ref] = useBox(() => ({args:[1.5,0.3,1], ...props }));
-  
-  //   return (
-  //     <mesh ref={ref} {...props}>
-  //       <boxBufferGeometry args={[1.5, 0.3, 1]} />
-  //       <meshStandardMaterial {...props} />
-  //     </mesh>
-  //   );
-  // };
-  // const BoxPallaVert = (props) => {
-  //   const [ref] = useBox(() => ({args:[0.3, 3, 1], ...props }));
-  
-  //   return (
-  //     <mesh ref={ref} {...props}>
-  //       <boxBufferGeometry args={[0.3, 3, 1]} />
-  //       <meshStandardMaterial {...props} />
-  //     </mesh>
-  //   );
-  // };
-
-// ---------------------------------------------------------------------------
-
-// function Spin({ children }) {
-//   const myMesh = useRef();
-//   useFrame(() => {
-//     myMesh.current.rotation.z += Math.PI * 2 + 0.008;
-//     // myMesh.current.rotation.z += Math.PI * 2 + 0.000008;
-//   });
-//   return <group ref={myMesh}>{children}</group>;
-// }
-
-// function SpinSun({ children }) {
-//   const myMesh = useRef();
-//   useFrame(() => {
-//     myMesh.current.position.z += 0.1;
-//   });
-//   return <group ref={myMesh}>{children}</group>;
-// }
-
-// function SpinReverse({ children }) {
-//   const myMesh = useRef();
-//   useFrame(({ clock }) => {
-//     myMesh.current.rotation.z += Math.PI * 2 - 0.008;
-//     // myMesh.current.rotation.z += Math.PI * 2 - 0.000008;
-//   });
-//   return <group ref={myMesh}>{children}</group>;
-// }
-
-// const Sphere = (props) => {
-//   const [hovered, setHovered] = useState(false);
-//   const [active, setActive] = useState(false);
-//   const { scale, color, position } = useSpring({
-//     // scale: hovered ? [0.6, 32, 32] : [0.3, 32, 32],
-//     color: hovered ? "darkorange" : "gold",
-//     position: active ? [12, -6, 15] : [-12, -6, -55],
-//   });
-
-//   return (
-//     <a.mesh
-//       {...props}
-//       onPointerOver={() => setHovered(true)}
-//       onPointerOut={() => setHovered(false)}
-//       onClick={() => setActive(!active)}
-//       // scale={scale}
-//       position={position}
-//     >
-//       <sphereBufferGeometry args={[32, 60, 60]} />
-//       <a.meshStandardMaterial color={color} />
-//     </a.mesh>
-//   );
-// };
-
-// const Cone = (props) => {
-//   const [hovered, setHovered] = useState(false);
-//   const [active, setActive] = useState(false);
-//   const { rotation, color, position } = useSpring({
-//     // scale: hovered ? [0.6, 32, 32] : [0.3, 32, 32],
-//     color: hovered ? "purple" : "firebrick",
-//     position: active ? [8, -3, -3] : [-8, 6, -2],
-//     rotation: active ? [5, 1, 3] : [0, 0, 0],
-//   });
-
-//   return (
-//     <a.mesh
-//       {...props}
-//       onPointerOver={() => setHovered(true)}
-//       onPointerOut={() => setHovered(false)}
-//       onClick={() => setActive(!active)}
-//       rotation={rotation}
-//       position={position}
-//     >
-//       <coneBufferGeometry args={[0.7, 3, 60]} />
-//       <a.meshStandardMaterial color={color} />
-//     </a.mesh>
-//   );
-// };
-
-// const Box = (props) => {
-//   const [hovered, setHovered] = useState(false);
-//   const [active, setActive] = useState(false);
-//   const { scale, color, position, rotation } = useSpring({
-//     scale: hovered ? [1.5, 1.5, 1.5] : [1, 1, 1],
-//     color: hovered ? "green" : "blue",
-//     position: active ? [-6, -6, -2] : [9, 5, -6],
-//     rotation: hovered ? [12, 3, 6] : [4, 1, 1],
-//   });
-
-//   return (
-//     <a.mesh
-//       {...props}
-//       onPointerOver={() => setHovered(true)}
-//       onPointerOut={() => setHovered(false)}
-//       onClick={() => setActive(!active)}
-//       scale={scale}
-//       position={position}
-//       rotation={rotation}
-//     >
-//       <boxBufferGeometry args={[1, 1, 1]} />
-//       <a.meshStandardMaterial color={color} />
-//     </a.mesh>
-//   );
-// };
