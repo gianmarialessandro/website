@@ -1,10 +1,10 @@
 body.about {
-  background: orange;
+  background: white;
   width: 100%;
   height: 100%;
   min-width: 360px;
-  position: absolute;
-  z-index: -2;
+  /* position: absolute; */
+  /* z-index: -2; */
   margin: 0;
   padding: 0;
 }
@@ -13,14 +13,41 @@ body.about {
   background: green;
 }
 
+.container-About {
+  position: relative;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  /* padding: 1rem; */
+  /* margin: 1rem; */
+  min-width: 700px;
+  font-family: "Raleway", sans-serif;
+  /* background: linear-gradient(#455d7a, #ececec); */
+  width: 100%;
+  height: 100%;
+  
+}
+
+.aboutMe {
+  background: white;
+
+}
+
+.mySkills {
+  background: white;
+}
+
+
 .canvas-About {
-  background: orange;
+  background-color: white;
+  /* background: orange;
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
   padding: 0;
-  margin: 0;
+  margin: 0; */
 }
 
 /* NAV BAR ---------------------------------*/
@@ -84,24 +111,19 @@ body.about {
 
 
 
- @media only screen and (max-width: 420px) {
+ /* @media only screen and (max-width: 420px) {
   body.about {
   background: orange;
-  /* min-width: 420px; */
-  /* width: 390px; */
-  /* height: 100%; */
-  /* min-width: 360px; */
   padding: 0;
   margin: 0;
   }
     
-  .canvas-About {
-    
+  .canvas-About {    
     width: 100%;
     position: absolute;
     z-index: -1;
     padding: 0;
     margin: 0;
     }
-} 
+}  */
 

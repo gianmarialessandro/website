@@ -19,7 +19,6 @@ const About = () => {
     clearHomePage();
     fixAboutPage();
     document.body.style.overflow = "hidden";
-
   }, []);
 
   return (
@@ -51,8 +50,14 @@ const About = () => {
           </li>
         </ul>
       </nav>
-      <div className="canvas-About">
-        <AboutAnimation/>
+      <div className="container-About">
+        <article className="aboutMe">
+          Based in Berlin, I have an interest in animations and creating
+          intuitive and dynamic user experiences. I am looking at the whole
+          frontend spectrum but would also like to develop on the backend side.
+        </article>
+        <div className="canvas-About"><AboutAnimation/></div>
+        <article className="mySkills">ciao</article>
       </div>
     </div>
   );

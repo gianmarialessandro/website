@@ -28,10 +28,10 @@ function HomeAnimation() {
       <OrbitControls />
       <ambientLight intensity={0.5} />
       <pointLight position={[10, 10, 15]} intensity={0.5} />
-      {/* <Stars
-        radius={50}
+      <Stars
+        radius={25}
         depth={50}
-        count={1000}
+        count={300}
         factor={4}
         saturation={0}
         fade
@@ -43,13 +43,13 @@ function HomeAnimation() {
         inclination={0}
         azimuth={0.25}
       />
-      <Float 
+      {/* <Float 
         speed={30} // Animation speed, defaults to 1
         rotationIntensity={40} // XYZ rotation intensity, defaults to 1
         floatIntensity={10} // Up/down float intensity, defaults to 1
       >
         <Box />
-      </Float> */}
+      </Float>  */}
     </Canvas>
   );
 }
