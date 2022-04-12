@@ -1,26 +1,19 @@
-import React, { useState, useRef, useMemo } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-// import { useSpring, a } from "@react-spring/three";
+import React from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
-import { Physics, useBox, useSphere } from "@react-three/cannon";
-
+// import { Physics, useBox, useSphere } from "@react-three/cannon";
 import "./App.css";
-// import { hover } from "@testing-library/user-event/dist/hover";
 
-const Sfera = (props) => {
+const Sun = (props) => {
 
   return (
-    <mesh
-      {...props}
-    >
-      <sphereBufferGeometry attach='geometry' args={[2, 60, 60]} />
-      <meshStandardMaterial attach='material' {...props} />
+    <mesh {...props}>
+      <sphereBufferGeometry args={[60, 64, 64]} />
+      <meshStandardMaterial color={'yellow'} />
     </mesh>
   )
 }
-
-
 
 function HomeAnimation() {
   return (
@@ -35,12 +28,60 @@ function HomeAnimation() {
       <OrbitControls />
       <ambientLight intensity={0.5} />
       <pointLight position={[10, 10, 15]} intensity={0.5} />
-      <Sfera position={[0, -8, 0]} color={'hotpink'} />
+      <Stars />
+      <Sun position={[250, 0, 0]}/>
     </Canvas>
   );
 }
 
 export default HomeAnimation;
+
+
+
+
+// ----------------------------------------------------------------------------
+// const Sfera = (props) => {
+  //   const [ref, api] = useSphere(() => ({ mass: 0.1, ...props }));
+  //   // console.log("ref= ", ref)
+  //   // console.log("api= ",api)
+  
+  //   return (
+  //     <mesh 
+  //       ref={ref} 
+  //       {...props}
+  //       onClick={() => {
+  //         api.velocity.set(0, 10, 0)   
+               
+  //       }}
+  //     >
+  //       <sphereBufferGeometry args={[1.2, 60, 60]} />
+  //       <meshStandardMaterial {...props} />
+  //     </mesh>
+  //   );
+  // };
+  
+  // const BoxPalla = (props) => {
+  //   const [ref] = useBox(() => ({args:[1.5,0.3,1], ...props }));
+  
+  //   return (
+  //     <mesh ref={ref} {...props}>
+  //       <boxBufferGeometry args={[1.5, 0.3, 1]} />
+  //       <meshStandardMaterial {...props} />
+  //     </mesh>
+  //   );
+  // };
+  // const BoxPallaVert = (props) => {
+  //   const [ref] = useBox(() => ({args:[0.3, 3, 1], ...props }));
+  
+  //   return (
+  //     <mesh ref={ref} {...props}>
+  //       <boxBufferGeometry args={[0.3, 3, 1]} />
+  //       <meshStandardMaterial {...props} />
+  //     </mesh>
+  //   );
+  // };
+
+// ---------------------------------------------------------------------------
 
 // function Spin({ children }) {
 //   const myMesh = useRef();
