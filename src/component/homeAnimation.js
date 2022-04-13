@@ -1,19 +1,10 @@
-import React, { useRef } from "react";
-import { Canvas, useLoader, useFrame } from "@react-three/fiber";
-import { OrbitControls, Stars, Cloud, Sky, Float } from "@react-three/drei";
+import React from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Stars, Sky } from "@react-three/drei";
 import * as THREE from "three";
-// import { Physics, useBox, useSphere } from "@react-three/cannon";
 
 import "../App.css";
 
-const Box = () => {
-  return (
-    <mesh>
-      <boxBufferGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={'orange'} />
-    </mesh>
-  )
-}
  
 function HomeAnimation() {
   return (
@@ -43,13 +34,6 @@ function HomeAnimation() {
         inclination={0}
         azimuth={0.25}
       />
-      {/* <Float 
-        speed={30} // Animation speed, defaults to 1
-        rotationIntensity={40} // XYZ rotation intensity, defaults to 1
-        floatIntensity={10} // Up/down float intensity, defaults to 1
-      >
-        <Box />
-      </Float>  */}
     </Canvas>
   );
 }

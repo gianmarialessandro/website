@@ -68,7 +68,7 @@ body.about {
   place-content: center;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  /* grid-template-rows: repeat(10, 1fr); */
   justify-content: space-evenly;
   /* min-width: 700px; */
   font-family: "Raleway", sans-serif;
@@ -79,7 +79,7 @@ body.about {
 }
 
 .aboutMe {
-  grid-row: span 6;
+  /* grid-row: span 6; */
   /* background: white; */
   display: grid;
   place-content: center;
@@ -102,19 +102,20 @@ body.about {
 }
 
 .anim-About-Center {
-  grid-row: span 6;
+  /* grid-row: span 6; */
   /* background: white; */
   padding: 1rem;
 }
 
 /* ------------------SKLILLS------------------------- */
 .mySkills {
-  grid-row: span 6;
+  /* grid-row: span 6; */
   color: white;
   /* background: white; */
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   place-content: center;
 
 }
@@ -126,6 +127,7 @@ body.about {
 .sklills-Tit {
   grid-column-start: 1;
   grid-column: span 2;
+  grid-row: 1;
   grid-row-start: 1;
   justify-self: center;
 
@@ -133,6 +135,7 @@ body.about {
 .skills-Front{
   grid-column: 1fr;
   grid-column-start: 1;
+
   grid-row-start: 2;
   justify-self: center;
 }

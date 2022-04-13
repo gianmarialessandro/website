@@ -10,7 +10,19 @@ import {
 
 import "./portfolio.css";
 
+
+
 const Portfolio = () => {
+  // window.onresize = screen;
+  // window.onload = screen;
+
+  // function screen() {
+  //   let mywidth = window.innerWidth;
+  //   // document.getElementById('size').innerHTML = "width: " + mywidth;
+  //   console.log("width: ", mywidth)
+  // }
+
+
   useEffect(() => {
     clearPortfolioPage();
     clearContactPage();
@@ -49,16 +61,17 @@ const Portfolio = () => {
           </li>
         </ul>
       </nav>
-
-      <div className="grid-container">
-        <article className="project city grid-col-span4">
-          <div className="flex">
-            <div className="imgAndTitleDiv">
+      
+      <div className="container-port">
+        <article className="project city">
+          <div className="header-item-port">
+            <div className="header-img-port">
               <img
                 src="./img/images/city-map.png"
                 alt="city-map"
-                width="100ch"
-                height="100ch"
+                // width="100ch"
+                // height="100ch"
+                className="img"
               />
             </div>
             <div>
@@ -99,14 +112,15 @@ const Portfolio = () => {
             </div>
           </div>
         </article>
-        <article className="project arkanoidCSS grid-col-span2">
-          <div className="flex">
-            <div className="imgAndTitleDiv">
+        <article className="project arkanoidCSS">
+          <div className="header-item-port">
+            <div className="header-img-port">
               <img
                 src="./img/images/arkanoid.png"
                 alt="city-map"
-                width="100ch"
-                height="100ch"
+                // width="100ch"
+                // height="100ch"
+                className="img"
               />
             </div>
             <div>
@@ -139,13 +153,14 @@ const Portfolio = () => {
           </div>
         </article>
         <article className="project social">
-          <div className="flex">
-            <div className="imgAndTitleDiv">
+          <div className="header-item-port">
+            <div className="header-img-port">
               <img
                 src="./img/images/network-automation.png"
                 alt="social network automation"
-                width="100ch"
-                height="100ch"
+                // width="100ch"
+                // height="100ch"
+                className="img"
               />
             </div>
             <div>
@@ -184,13 +199,14 @@ const Portfolio = () => {
           </div>
         </article>
         <article className="project eol grid-col-span2">
-          <div className="flex">
-            <div className="imgAndTitleDiv">
+          <div className="header-item-port">
+            <div className="header-img-port">
               <img
                 src="./img/images/eol.png"
                 alt="end-of-life"
-                width="100ch"
-                height="100ch"
+                // width="100ch"
+                // height="100ch"
+                className="img"
               />
             </div>
             <div>
@@ -228,13 +244,14 @@ const Portfolio = () => {
           </div>
         </article>
         <article className="project quiz">
-          <div className="flex">
-            <div className="imgAndTitleDiv">
+          <div className="header-item-port">
+            <div className="header-img-port">
               <img
                 src="./img/images/quiz.png"
                 alt="quiz"
-                width="100ch"
-                height="100ch"
+                // width="100ch"
+                // height="100ch"
+                className="img"
               />
             </div>
             <div>
@@ -263,13 +280,14 @@ const Portfolio = () => {
           </div>
         </article>
         <article className="project blog">
-          <div className="flex">
-            <div className="imgAndTitleDiv">
+          <div className="header-item-port">
+            <div className="header-img-port">
               <img
                 src="./img/images/blog.png"
                 alt="blog"
-                width="100ch"
-                height="100ch"
+                // width="100ch"
+                // height="100ch"
+                className="img"
               />
             </div>
             <div>
@@ -298,6 +316,7 @@ const Portfolio = () => {
           </div>
         </article>
       </div>
+      <div id="size"></div>
     </div>
   );
 };
