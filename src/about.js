@@ -7,8 +7,7 @@ import {
   clearContactPage,
   clearHomePage,
 } from "./component/utils";
-import AboutAnimation from "./component/aboutAnimation";
-import AnimationAboutUp from "./component/animationAboutUp";
+import AnimationAboutCenter from "./component/animationAboutCenter";
 
 const About = () => {
   useEffect(() => {
@@ -50,9 +49,6 @@ const About = () => {
         </ul>
       </nav>
       <div className="container-About">
-        <div className="anim-About-Up">
-          <AnimationAboutUp />
-        </div>
         <div className="aboutMe">
           <h2 className="title-AboutMe">About Me</h2>
           <p className="content-AboutMe">
@@ -63,7 +59,7 @@ const About = () => {
           </p>
         </div>
         <div className="anim-About-Center">
-          <AboutAnimation />
+          <AnimationAboutCenter />
         </div>
         <div className="mySkills">
           <h2 className="sklills-Tit">Skills</h2>
@@ -108,7 +104,6 @@ const About = () => {
             </li>
           </ul>
         </div>
-        <div className="anim-About-Down">bottom</div>
       </div>
     </div>
   );
