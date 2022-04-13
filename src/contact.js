@@ -6,7 +6,7 @@ import {
   clearAboutPage,
   clearHomePage,
   clearArkanoidPage,
-} from "./utils";
+} from "./component/utils";
 
 import "./contact.css";
 

@@ -8,7 +8,7 @@ import {
   clearAboutPage,
   clearContactPage,
   clearHomePage,
-} from "./utils";
+} from "./component/utils";
 
 import "./arkanoid.css";
 

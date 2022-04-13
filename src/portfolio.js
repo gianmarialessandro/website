@@ -6,7 +6,7 @@ import {
   clearAboutPage,
   clearContactPage,
   clearArkanoidPage,
-} from "./utils";
+} from "./component/utils";
 
 import "./portfolio.css";
 

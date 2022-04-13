@@ -13,7 +13,7 @@ const Box = () => {
   );
 };
 
-function AboutAnimation() {
+function AnimationAboutUp() {
   return (
     <Canvas style={{}}>
       <OrbitControls />
@@ -30,4 +30,4 @@ function AboutAnimation() {
   );
 }
 
-export default AboutAnimation;
+export default AnimationAboutUp;

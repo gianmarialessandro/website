@@ -4,7 +4,7 @@ import { OrbitControls, Stars, Cloud, Sky, Float } from "@react-three/drei";
 import * as THREE from "three";
 // import { Physics, useBox, useSphere } from "@react-three/cannon";
 
-import "./App.css";
+import "../App.css";
 
 const Box = () => {
   return (

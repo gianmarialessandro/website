@@ -7,7 +7,7 @@ import {
   clearContactPage,
   clearArkanoidPage,
 } from "./component/utils";
-import HomeAnimation from "./component/homeAnimation";
+import HomeAnimation from "./component/homeAnimation.js";
 import "./home.css";
 
 const Home = () => {

@@ -7,9 +7,8 @@ import {
   clearContactPage,
   clearHomePage,
 } from "./component/utils";
-import AboutAnimation from "./aboutAnimation";
-
-import "./about.css";
+import AboutAnimation from "./component/aboutAnimation";
+import AnimationAboutUp from "./component/animationAboutUp";
 
 const About = () => {
   useEffect(() => {
@@ -51,7 +50,9 @@ const About = () => {
         </ul>
       </nav>
       <div className="container-About">
-        <div className="anim-About-Up">top</div>
+        <div className="anim-About-Up">
+          <AnimationAboutUp />
+        </div>
         <div className="aboutMe">
           <h2 className="title-AboutMe">About Me</h2>
           <p className="content-AboutMe">
@@ -64,7 +65,49 @@ const About = () => {
         <div className="anim-About-Center">
           <AboutAnimation />
         </div>
-        <div className="mySkills">ciao</div>
+        <div className="mySkills">
+          <h2 className="sklills-Tit">Skills</h2>
+          <ul className="skills-Front">
+            <li>
+              Front-End
+              <ul className="skills-Ul">
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>HTML</li>
+              </ul>
+            </li>
+          </ul>
+          <ul className="skills-Back">
+            <li>
+              Back-End
+              <ul className="skills-Ul">
+                <li>Node.js</li>
+                <li>SQL</li>
+                <li>MySQL</li>
+              </ul>
+            </li>
+          </ul>
+          <ul className="skills-Source">
+            <li>
+              Source Control
+              <ul className="skills-Ul">
+                <li>Git</li>
+                <li>GitHub</li>
+              </ul>
+            </li>
+          </ul>
+          <ul className="skills-3D">
+            <li>
+              3D Animation
+              <ul className="skills-Ul">
+                <li>Three.js</li>
+                <li>R3F</li>
+                <li>Blender</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
         <div className="anim-About-Down">bottom</div>
       </div>
     </div>
