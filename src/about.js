@@ -18,7 +18,7 @@ const About = () => {
     clearArkanoidPage();
     clearHomePage();
     fixAboutPage();
-    document.body.style.overflow = "hidden";
+    // document.body.style.overflow = "hidden";
   }, []);
 
   return (
@@ -51,13 +51,21 @@ const About = () => {
         </ul>
       </nav>
       <div className="container-About">
-        <article className="aboutMe">
-          Based in Berlin, I have an interest in animations and creating
-          intuitive and dynamic user experiences. I am looking at the whole
-          frontend spectrum but would also like to develop on the backend side.
-        </article>
-        <div className="canvas-About"><AboutAnimation/></div>
-        <article className="mySkills">ciao</article>
+        <div className="anim-About-Up">top</div>
+        <div className="aboutMe">
+          <h2 className="title-AboutMe">About Me</h2>
+          <p className="content-AboutMe">
+            Based in Berlin, I have an interest in animations and creating
+            intuitive and dynamic user experiences. I am looking at the whole
+            frontend spectrum but would also like to develop on the backend
+            side.
+          </p>
+        </div>
+        <div className="anim-About-Center">
+          <AboutAnimation />
+        </div>
+        <div className="mySkills">ciao</div>
+        <div className="anim-About-Down">bottom</div>
       </div>
     </div>
   );
