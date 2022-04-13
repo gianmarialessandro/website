@@ -6,8 +6,8 @@ import {
   clearAboutPage,
   clearContactPage,
   clearArkanoidPage,
-} from "./utils";
-import HomeAnimation from "./homeAnimation";
+} from "./component/utils";
+import HomeAnimation from "./component/homeAnimation";
 import "./home.css";
 
 const Home = () => {

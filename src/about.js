@@ -6,7 +6,7 @@ import {
   clearArkanoidPage,
   clearContactPage,
   clearHomePage,
-} from "./utils";
+} from "./component/utils";
 import AboutAnimation from "./aboutAnimation";
 
 import "./about.css";
