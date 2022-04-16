@@ -30,3 +30,4 @@
 * About page 
 * Contact Page
 * performance in small device
+* change all the site
